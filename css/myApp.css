@@ -1,0 +1,100 @@
+body {
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-container {
+    background: url('../imgs/bg.jpg') no-repeat center 100px white fixed;
+    background-size: 100% auto;
+}
+
+.main-menu {
+    min-height: 100px;
+    padding-top: 5px;
+}
+
+.brand-logo {
+    display: block;
+    float: left;
+}
+
+.main-menu-items {
+    float: right;
+    padding-top: 40px;
+}
+
+.menu-item {
+    float: left;
+    display: block;
+    height: 50px;
+    width: 170px;
+    background-color: #0599d9;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.menu-item-1 {
+    margin-left: 0;
+}
+
+.menu-item:hover, .menu-item:active, .menu-item:visited, .menu-item:link {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item .menu-item-text {
+    margin: auto;
+    padding: 0;
+}
+
+.menu-item h4.menu-item-text {
+    margin-bottom: 5px;
+}
+
+.main-footer {
+    min-height: 84px;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    width: 100%;
+}
+
+.content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.page-content.ng-enter {
+    transition: 1.5s linear all;
+    opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.page-content.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .menu-item-1, .menu-item-5, .menu-item-6 {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container {
+        width: 1350px;
+    }
+
+    .menu-item-1, .menu-item-5, .menu-item-6 {
+        width: 170px;
+    }
+}
+

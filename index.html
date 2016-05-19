@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/myApp.css">
+  <title>宁海越野挑战赛</title>
+</head>
+<body ng-app="myApp">
+<div class="container-fluid main-container">
+  <div class="row">
+    <div class="container main-content">
+      <div class="row">
+        <nav class="main-menu container-fluid">
+          <div class="row clearfix">
+            <a class="brand-logo" ui-sref="home">
+              <img alt="Brand" src="imgs/logo.jpg">
+            </a>
+            <div class="main-menu-items clearfix">
+              <a class="menu-item menu-item-1" ui-sref="home">
+                <h4 class="menu-item-text">首页</h4>
+                <h5 class="menu-item-text">HOME</h5>
+              </a>
+              <a class="menu-item" ui-sref="event">
+                <h4 class="menu-item-text">秋季赛事</h4>
+                <h5 class="menu-item-text">ULTRA-TRAIL NINGHAI</h5>
+              </a>
+              <a class="menu-item" ui-sref="home">
+                <h4 class="menu-item-text">春季赛事</h4>
+                <h5 class="menu-item-text">NINGHAI TRAIL</h5>
+              </a>
+              <a class="menu-item" ui-sref="home">
+                <h4 class="menu-item-text">赛事指南</h4>
+                <h5 class="menu-item-text">GENERAL INFO</h5>
+              </a>
+              <a class="menu-item menu-item-5" ui-sref="home">
+                <h4 class="menu-item-text">新闻</h4>
+                <h5 class="menu-item-text">NEWS</h5>
+              </a>
+              <a class="menu-item menu-item-6" ui-sref="home">
+                <h4 class="menu-item-text">照片</h4>
+                <h5 class="menu-item-text">GALLERY</h5>
+              </a>
+              <a class="menu-item" ui-sref="home">
+                <h4 class="menu-item-text">有关我们</h4>
+                <h5 class="menu-item-text">ABOUT US</h5>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="content container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div ui-view="" class="page-content row"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="pull-right">
+            <div>主办单位：上海穹景体育文化发展有限公司</div>
+            <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备14023412号-3</a>
+            <div>
+              <small>&copy; 2016</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/angular-aria/angular-aria.min.js"></script>
+<script src="libs/angular-animate/angular-animate.min.js"></script>
+<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+  (function ($) {
+    function fillContentHeight() {
+      var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+      $('.content').height(h - 84 - 100);
+    }
+
+    $(function () {
+      fillContentHeight();
+      $(window).resize(fillContentHeight);
+    });
+  })(jQuery);
+</script>
+<script src="src/app.js"></script>
+</body>
+</html>
