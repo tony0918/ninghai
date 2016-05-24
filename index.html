@@ -25,19 +25,39 @@
                 </a>
               </div>
               <div class="menu-item dropdown">
-                <a ui-sref="event">
+                <a data-target="#" data-toggle="dropdown">
                   <h4 class="menu-item-text">秋季赛事</h4>
                   <h5 class="menu-item-text">ULTRA-TRAIL NINGHAI</h5>
                 </a>
+                <div class="dropdown-menu">
+                  <div class="menu-dropdown-item">
+                    <a ui-sref="ultraTrailCourse">
+                      <h4 class="menu-item-text">赛道</h4>
+                      <h6 class="menu-item-text">COURSE</h6>
+                    </a>
+                  </div>
+                  <div class="menu-dropdown-item">
+                    <a ui-sref="ultraTrailRegulation">
+                      <h4 class="menu-item-text">赛事规则</h4>
+                      <h5 class="menu-item-text">REGULATION</h5>
+                    </a>
+                  </div>
+                  <div class="menu-dropdown-item last">
+                    <a ui-sref="ultraTrailRegistration">
+                      <h4 class="menu-item-text">报名</h4>
+                      <h5 class="menu-item-text">REGISTRATION</h5>
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="menu-item dropdown">
-                <a data-target="#" data-toggle="dropdown">
+                <a ui-sref="ninghaiTrail">
                   <h4 class="menu-item-text">春季赛事</h4>
                   <h5 class="menu-item-text">NINGHAI TRAIL</h5>
                 </a>
               </div>
               <div class="menu-item dropdown">
-                <a data-target="#" data-toggle="dropdown" class="dropdown-toggle">
+                <a data-target="#" data-toggle="dropdown">
                   <h4 class="menu-item-text">赛事指南</h4>
                   <h5 class="menu-item-text">GENERAL INFO</h5>
                 </a>
@@ -75,7 +95,7 @@
                 </a>
               </div>
               <div class="menu-item">
-                <a ui-sref="home">
+                <a ui-sref="aboutUs">
                   <h4 class="menu-item-text">有关我们</h4>
                   <h5 class="menu-item-text">ABOUT US</h5>
                 </a>

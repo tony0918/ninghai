@@ -20,5 +20,21 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
     .state('contactUs', {
       url: '/contact-us',
       templateUrl: 'src/pages/contact-us.html'
+    })
+    .state('aboutUs', {
+      url: '/about-us',
+      templateUrl: 'src/pages/about-us.html'
+    })
+    .state('ultraTrailCourse', {
+      url: '/ultra-trail/course',
+      templateUrl: 'src/pages/ultra-trail-course.html'
+    })
+    .state('ultraTrailRegulation', {
+      url: '/ultra-trail/regulation',
+      templateUrl: 'src/pages/ultra-trail-regulation.html'
+    })
+    .state('ninghaiTrail', {
+      url: '/ninghai-trail',
+      template: '<h1>Coming soon.</h1>'
     });
 }]);

@@ -106,9 +106,9 @@ a:hover {
     padding-top: 10px;
 }
 
-::-webkit-scrollbar {
-    visibility: hidden;
-}
+/*::-webkit-scrollbar {*/
+    /*visibility: hidden;*/
+/*}*/
 
 .page-content {
     padding: 35px;
