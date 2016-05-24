@@ -18,52 +18,93 @@
               <img alt="Brand" src="imgs/logo.jpg">
             </a>
             <div class="main-menu-items clearfix">
-              <a class="menu-item menu-item-1" ui-sref="home">
-                <h4 class="menu-item-text">首页</h4>
-                <h5 class="menu-item-text">HOME</h5>
-              </a>
-              <a class="menu-item" ui-sref="event">
-                <h4 class="menu-item-text">秋季赛事</h4>
-                <h5 class="menu-item-text">ULTRA-TRAIL NINGHAI</h5>
-              </a>
-              <a class="menu-item" ui-sref="home">
-                <h4 class="menu-item-text">春季赛事</h4>
-                <h5 class="menu-item-text">NINGHAI TRAIL</h5>
-              </a>
-              <a class="menu-item" ui-sref="home">
-                <h4 class="menu-item-text">赛事指南</h4>
-                <h5 class="menu-item-text">GENERAL INFO</h5>
-              </a>
-              <a class="menu-item menu-item-5" ui-sref="home">
-                <h4 class="menu-item-text">新闻</h4>
-                <h5 class="menu-item-text">NEWS</h5>
-              </a>
-              <a class="menu-item menu-item-6" ui-sref="home">
-                <h4 class="menu-item-text">照片</h4>
-                <h5 class="menu-item-text">GALLERY</h5>
-              </a>
-              <a class="menu-item" ui-sref="home">
-                <h4 class="menu-item-text">有关我们</h4>
-                <h5 class="menu-item-text">ABOUT US</h5>
-              </a>
+              <div class="menu-item menu-item-1">
+                <a ui-sref="home">
+                  <h4 class="menu-item-text">首页</h4>
+                  <h5 class="menu-item-text">HOME</h5>
+                </a>
+              </div>
+              <div class="menu-item dropdown">
+                <a ui-sref="event">
+                  <h4 class="menu-item-text">秋季赛事</h4>
+                  <h5 class="menu-item-text">ULTRA-TRAIL NINGHAI</h5>
+                </a>
+              </div>
+              <div class="menu-item dropdown">
+                <a data-target="#" data-toggle="dropdown">
+                  <h4 class="menu-item-text">春季赛事</h4>
+                  <h5 class="menu-item-text">NINGHAI TRAIL</h5>
+                </a>
+              </div>
+              <div class="menu-item dropdown">
+                <a data-target="#" data-toggle="dropdown" class="dropdown-toggle">
+                  <h4 class="menu-item-text">赛事指南</h4>
+                  <h5 class="menu-item-text">GENERAL INFO</h5>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="menu-dropdown-item">
+                    <a ui-sref="transportationAndHotel">
+                      <h4 class="menu-item-text">交通住宿</h4>
+                      <h6 class="menu-item-text">TRANSPORTATION AND HOTEL</h6>
+                    </a>
+                  </div>
+                  <div class="menu-dropdown-item">
+                    <a ui-sref="spectators">
+                      <h4 class="menu-item-text">观众支援</h4>
+                      <h5 class="menu-item-text">SPECTATORS</h5>
+                    </a>
+                  </div>
+                  <div class="menu-dropdown-item last">
+                    <a ui-sref="contactUs">
+                      <h4 class="menu-item-text">联系我们</h4>
+                      <h5 class="menu-item-text">CONTACT US</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item menu-item-5">
+                <a ui-sref="home">
+                  <h4 class="menu-item-text">新闻</h4>
+                  <h5 class="menu-item-text">NEWS</h5>
+                </a>
+              </div>
+              <div class="menu-item menu-item-6">
+                <a ui-sref="home">
+                  <h4 class="menu-item-text">照片</h4>
+                  <h5 class="menu-item-text">GALLERY</h5>
+                </a>
+              </div>
+              <div class="menu-item">
+                <a ui-sref="home">
+                  <h4 class="menu-item-text">有关我们</h4>
+                  <h5 class="menu-item-text">ABOUT US</h5>
+                </a>
+              </div>
             </div>
           </div>
         </nav>
         <div class="content container-fluid">
           <div class="row">
-            <div class="col-md-12">
-              <div ui-view="" class="page-content row"></div>
+            <div class="page-content">
+              <div class="page-content-uiview" ui-view></div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
     <footer class="main-footer">
       <div class="container">
         <div class="row">
-          <div class="pull-right">
+          <div class="pull-left">
+            <span><img src="/assets/spon1.jpg" alt=""></span>
+            <span><img src="/assets/spon2.jpg" alt=""></span>
+            <span><img src="/assets/spon3.jpg" alt=""></span>
+            <span><img src="/assets/spon4.jpg" alt=""></span>
+            <span><img src="/assets/spon5.jpg" alt=""></span>
+            <span><img src="/assets/spon6.jpg" alt=""></span>
+            <span><img src="/assets/spon7.jpg" alt=""></span>
+          </div>
+          <div class="pull-right copyright">
             <div>主办单位：上海穹景体育文化发展有限公司</div>
             <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备14023412号-3</a>
             <div>
@@ -81,19 +122,24 @@
 <script src="libs/angular-animate/angular-animate.min.js"></script>
 <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="src/app.js"></script>
 <script>
   (function ($) {
     function fillContentHeight() {
-      var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      $('.content').height(h - 84 - 100);
+      $('.page-content').height($(window).height() - 84 - 100 - 70);
     }
 
     $(function () {
       fillContentHeight();
       $(window).resize(fillContentHeight);
+
+//      $('.dropdown').hover(function () {
+//        $(this).addClass('open');
+//      }, function () {
+//        $(this).removeClass('open');
+//      });
     });
   })(jQuery);
 </script>
-<script src="src/app.js"></script>
 </body>
 </html>
