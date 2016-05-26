@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/myApp.css">
   <title>宁海越野挑战赛</title>
@@ -42,10 +43,22 @@
                       <h5 class="menu-item-text">REGULATION</h5>
                     </a>
                   </div>
-                  <div class="menu-dropdown-item last">
+                  <div class="menu-dropdown-item">
                     <a ui-sref="ultraTrailRegistration">
                       <h4 class="menu-item-text">报名</h4>
                       <h5 class="menu-item-text">REGISTRATION</h5>
+                    </a>
+                  </div>
+                  <div class="menu-dropdown-item">
+                    <a ui-sref="ultraTrailSchedule">
+                      <h4 class="menu-item-text">比赛安排</h4>
+                      <h5 class="menu-item-text">SCHEDULE</h5>
+                    </a>
+                  </div>
+                  <div class="menu-dropdown-item last">
+                    <a ui-sref="ultraTrailResult">
+                      <h4 class="menu-item-text">成绩</h4>
+                      <h5 class="menu-item-text">RESULT</h5>
                     </a>
                   </div>
                 </div>
@@ -83,13 +96,13 @@
                 </div>
               </div>
               <div class="menu-item menu-item-5">
-                <a ui-sref="home">
+                <a ui-sref="news">
                   <h4 class="menu-item-text">新闻</h4>
                   <h5 class="menu-item-text">NEWS</h5>
                 </a>
               </div>
               <div class="menu-item menu-item-6">
-                <a ui-sref="home">
+                <a ui-sref="gallery">
                   <h4 class="menu-item-text">照片</h4>
                   <h5 class="menu-item-text">GALLERY</h5>
                 </a>
@@ -146,18 +159,12 @@
 <script>
   (function ($) {
     function fillContentHeight() {
-      $('.page-content').height($(window).height() - 84 - 100 - 70);
+      $('.page-content').height($(window).height() - 84 - $('.main-footer').height() - 70);
     }
 
     $(function () {
       fillContentHeight();
       $(window).resize(fillContentHeight);
-
-//      $('.dropdown').hover(function () {
-//        $(this).addClass('open');
-//      }, function () {
-//        $(this).removeClass('open');
-//      });
     });
   })(jQuery);
 </script>

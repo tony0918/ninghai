@@ -1,3 +1,5 @@
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const imageminOptipng = require('imagemin-optipng');
 module.exports = function (grunt) {
   'use strict';
 
@@ -8,7 +10,17 @@ module.exports = function (grunt) {
           port: 9001,
           keepalive: true
         }
+      },
+      prod: {
+        options: {
+          port: 9002,
+          keepalive: true,
+          base: 'dist'
+        }
       }
+    },
+    clean: {
+      build: ['dist']
     },
     copy: {
       dev: {
@@ -27,13 +39,42 @@ module.exports = function (grunt) {
             ]
           }
         ]
+      },
+      prod: {
+        files: [
+          {
+            expand: true, dest: 'dist',
+            src: [
+              'libs/**/*',
+              'index.html',
+              'css/**/*',
+              'src/**/*'
+            ]
+          }
+        ]
+      }
+    },
+    imagemin: {
+      options: {                       // Target options
+        optimizationLevel: 3,
+        use: [imageminMozjpeg(), imageminOptipng()]
+      },
+      dynamic: {                         // Another target
+        files: [{
+          expand: true,
+          src: ['imgs/**/*', 'assets/**/*'],
+          dest: 'dist/'
+        }]
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('install', ['copy:dev']);
-  grunt.registerTask('server', ['connect']);
+  grunt.registerTask('server', ['connect:server']);
+  grunt.registerTask('package', ['clean', 'copy', 'imagemin', 'connect:prod']);
 };

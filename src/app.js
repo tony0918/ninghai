@@ -33,8 +33,28 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       url: '/ultra-trail/regulation',
       templateUrl: 'src/pages/ultra-trail-regulation.html'
     })
+    .state('ultraTrailRegistration', {
+      url: '/ultra-trail/registration',
+      templateUrl: 'src/pages/ultra-trail-registration.html'
+    })
+    .state('ultraTrailSchedule', {
+      url: '/ultra-trail/schedule',
+      templateUrl: 'src/pages/ultra-trail-schedule.html'
+    })
+    .state('ultraTrailResult', {
+      url: '/ultra-trail/result',
+      templateUrl: 'src/pages/ultra-trail-result.html'
+    })
     .state('ninghaiTrail', {
       url: '/ninghai-trail',
+      template: '<h1>Coming soon.</h1>'
+    })
+    .state('news', {
+      url: '/news',
+      template: '<h1>Coming soon.</h1>'
+    })
+    .state('gallery', {
+      url: '/gallery',
       template: '<h1>Coming soon.</h1>'
     });
 }]);

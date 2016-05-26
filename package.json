@@ -18,9 +18,12 @@
   "homepage": "https://github.com/tony0918/ninghai#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-open": "^0.2.3"
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-open": "^0.2.3",
+    "imagemin-mozjpeg": "^5.1.0"
   },
   "dependencies": {
     "angular": "^1.5.5",
