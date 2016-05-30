@@ -49,7 +49,8 @@ module.exports = function (grunt) {
               'index.html',
               'css/**/*',
               'src/**/*',
-              'download.php'
+              'download.php',
+              'fonts/**/*'
             ]
           }
         ]

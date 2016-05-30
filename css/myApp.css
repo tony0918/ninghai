@@ -7,6 +7,12 @@ a:hover {
     color: white;
 }
 
+.brand-logo {
+    width: 85px;
+    display: block;
+    /*float: left;*/
+}
+
 .main-container {
     background: url('../imgs/bg.jpg') no-repeat center 100px white fixed;
     background-size: 100% auto;
@@ -15,11 +21,6 @@ a:hover {
 .main-menu {
     height: 100px;
     padding-top: 5px;
-}
-
-.brand-logo {
-    display: block;
-    float: left;
 }
 
 .main-menu-items {
@@ -124,9 +125,42 @@ a:hover {
     opacity: 1;
 }
 
+.visible-1350 {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .brand-logo {
+        width: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu-item-1, .menu-item-5, .menu-item-6 {
+        width: 80px;
+    }
+
+    .menu-item-7 {
+        width: 100px;
+    }
+
+    .brand-logo {
+        width: 85px;
+        float: left;
+    }
+}
+
 @media (min-width: 1200px) {
     .menu-item-1, .menu-item-5, .menu-item-6 {
         width: 100px;
+    }
+
+    .brand-logo {
+        width: 96px;
+    }
+
+    .menu-item-7 {
+        width: 170px;
     }
 }
 
@@ -135,8 +169,20 @@ a:hover {
         width: 1350px;
     }
 
-    .menu-item-1, .menu-item-5, .menu-item-6 {
+    .menu-item-1, .menu-item-5, .menu-item-6, .menu-item-7 {
         width: 170px;
+    }
+
+    .visible-1350 {
+        display: block;
+    }
+
+    .hidden-1350 {
+        display: none !important;
+    }
+
+    .brand-logo {
+        width: 96px;
     }
 }
 

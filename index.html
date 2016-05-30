@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/component.css">
   <link rel="stylesheet" href="css/myApp.css">
   <title>宁海越野挑战赛</title>
 </head>
@@ -13,10 +14,11 @@
   <div class="row">
     <div class="container main-content">
       <div class="row">
-        <nav class="main-menu container-fluid">
+        <!-- Desktop Menu -->
+        <nav class="main-menu container-fluid visible-md-block visible-lg-block">
           <div class="row clearfix">
             <a class="brand-logo" ui-sref="home">
-              <img alt="Brand" src="imgs/logo.jpg">
+              <img alt="Brand" class="img-responsive" src="imgs/logo.jpg">
             </a>
             <div class="main-menu-items clearfix">
               <div class="menu-item menu-item-1">
@@ -107,7 +109,7 @@
                   <h5 class="menu-item-text">GALLERY</h5>
                 </a>
               </div>
-              <div class="menu-item">
+              <div class="menu-item menu-item-7">
                 <a ui-sref="aboutUs">
                   <h4 class="menu-item-text">有关我们</h4>
                   <h5 class="menu-item-text">ABOUT US</h5>
@@ -116,7 +118,58 @@
             </div>
           </div>
         </nav>
+
+        <div class="visible-xs-block visible-sm-block row">
+          <div id="gn-menu" class="gn-menu-main" style="z-index: 1;">
+            <a class="gn-icon gn-icon-menu"></a>
+            <nav class="gn-menu-wrapper">
+              <div class="gn-scroller">
+                <ul class="gn-menu">
+                  <li>
+                    <a ui-sref="home">首页 HOME</a>
+                  </li>
+                  <li>
+                    <a>秋季赛事 ULTRA-TRAIL NINGHAI</a>
+                    <ul class="gn-submenu">
+                      <li><a ui-sref="ultraTrailCourse">赛道 COURSE</a></li>
+                      <li><a ui-sref="ultraTrailRegulation">赛事规则 REGULATION</a></li>
+                      <li><a ui-sref="ultraTrailRegistration">报名 REGISTRATION</a></li>
+                      <li><a ui-sref="ultraTrailSchedule">比赛安排 SCHEDULE</a></li>
+                      <li><a ui-sref="ultraTrailResult">成绩 RESULT</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a ui-sref="ninghaiTrail">春季赛事 NINGHAI TRAIL</a>
+                  </li>
+                  <li>
+                    <a>赛事指南 GENERAL INFO</a>
+                    <ul class="gn-submenu">
+                      <li><a ui-sref="transportationAndHotel">交通住宿 <small>TRANSPORTATION & HOTEL</small></a></li>
+                      <li><a ui-sref="spectators">观众支援 SPECTATORS</a></li>
+                      <li><a ui-sref="contactUs">联系我们 CONTACT US</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a ui-sref="news">新闻 NEWS</a>
+                  </li>
+                  <li>
+                    <a ui-sref="gallery">照片 GALLERY</a>
+                  </li>
+                  <li>
+                    <a ui-sref="aboutUs">有关我们 ABOUT US</a>
+                  </li>
+                </ul>
+              </div><!-- /gn-scroller -->
+            </nav>
+          </div>
+          <div class="col-sm-12" style="padding: 7px 0 6px 0;">
+            <a class="brand-logo center-block" ui-sref="home"><img alt="Brand" class="img-responsive" src="imgs/logo.jpg"></a>
+          </div>
+        </div>
+
+
         <div class="content container-fluid">
+          <!-- Mobile Menu -->
           <div class="row">
             <div class="page-content">
               <div class="page-content-uiview" ui-view></div>
@@ -128,7 +181,7 @@
     <footer class="main-footer">
       <div class="container">
         <div class="row">
-          <div class="pull-left">
+          <div class="pull-left visible-1350">
             <span><img src="/assets/spon1.jpg" alt=""></span>
             <span><img src="/assets/spon2.jpg" alt=""></span>
             <span><img src="/assets/spon3.jpg" alt=""></span>
@@ -137,12 +190,22 @@
             <span><img src="/assets/spon6.jpg" alt=""></span>
             <span><img src="/assets/spon7.jpg" alt=""></span>
           </div>
-          <div class="pull-right copyright">
+          <div class="pull-right copyright visible-1350">
             <div>主办单位：上海穹景体育文化发展有限公司</div>
             <div>沪ICP备14023412号-3</div>
             <div>
               <small>&copy; 2016</small>
             </div>
+          </div>
+          <div class="text-center hidden-1350 sponsor col-md-12 col-lg-12">
+            <img src="assets/sponsors.jpg" class="img-responsive center-block" alt="">
+          </div>
+          <div class="text-center col-md-12 col-lg-12 hidden-1350">
+            <span style="padding-right: 15px;">主办单位：上海穹景体育文化发展有限公司</span>
+            <span style="padding-right: 15px;">沪ICP备14023412号-3</span>
+            <span style="padding-right: 15px;">
+              <small>&copy; 2016</small>
+            </span>
           </div>
         </div>
       </div>
@@ -155,6 +218,9 @@
 <script src="libs/angular-animate/angular-animate.min.js"></script>
 <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="src/modernizr.custom.js"></script>
+<script src="src/classie.js"></script>
+<script src="src/gnmenu.js"></script>
 <script src="src/app.js"></script>
 <script>
   (function ($) {
@@ -165,6 +231,7 @@
     $(function () {
       fillContentHeight();
       $(window).resize(fillContentHeight);
+      new gnMenu(document.getElementById('gn-menu'));
     });
   })(jQuery);
 </script>
