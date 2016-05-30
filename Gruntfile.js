@@ -48,7 +48,8 @@ module.exports = function (grunt) {
               'libs/**/*',
               'index.html',
               'css/**/*',
-              'src/**/*'
+              'src/**/*',
+              'download.php'
             ]
           }
         ]
