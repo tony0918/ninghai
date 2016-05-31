@@ -15,6 +15,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/home.html',
       onEnter: function () {
         trackPageView('/home');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('transportationAndHotel', {
@@ -22,6 +23,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/transportation-and-hotel.html',
       onEnter: function () {
         trackPageView('/transportation-and-hotel');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('spectators', {
@@ -29,6 +31,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/spectators.html',
       onEnter: function () {
         trackPageView('/spectators');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('contactUs', {
@@ -36,6 +39,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/contact-us.html',
       onEnter: function () {
         trackPageView('/contact-us');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('aboutUs', {
@@ -43,6 +47,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/about-us.html',
       onEnter: function () {
         trackPageView('/about-us');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('ultraTrailCourse', {
@@ -50,6 +55,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/ultra-trail-course.html',
       onEnter: function () {
         trackPageView('/ultra-trail/course');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('ultraTrailRegulation', {
@@ -57,6 +63,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/ultra-trail-regulation.html',
       onEnter: function () {
         trackPageView('/ultra-trail/regulation');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('ultraTrailRegistration', {
@@ -64,6 +71,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/ultra-trail-registration.html',
       onEnter: function () {
         trackPageView('/ultra-trail/registration');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('ultraTrailSchedule', {
@@ -71,6 +79,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/ultra-trail-schedule.html',
       onEnter: function () {
         trackPageView('/ultra-trail/schedule');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('ultraTrailResult', {
@@ -78,6 +87,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       templateUrl: 'src/pages/ultra-trail-result.html',
       onEnter: function () {
         trackPageView('/ultra-trail/result');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('ninghaiTrail', {
@@ -85,6 +95,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       template: '<h1>Coming soon.</h1>',
       onEnter: function () {
         trackPageView('/ninghai-trail');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('news', {
@@ -92,6 +103,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       template: '<h1>Coming soon.</h1>',
       onEnter: function () {
         trackPageView('/news');
+        $('.page-content')[0].scrollTop = 0;
       }
     })
     .state('gallery', {
@@ -99,6 +111,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
       template: '<h1>Coming soon.</h1>',
       onEnter: function () {
         trackPageView('/gallery');
+        $('.page-content')[0].scrollTop = 0;
       }
     });
 }]);

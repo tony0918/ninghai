@@ -10,7 +10,6 @@ a:hover {
 .brand-logo {
     width: 85px;
     display: block;
-    /*float: left;*/
 }
 
 .main-container {
@@ -129,9 +128,22 @@ a:hover {
     display: none;
 }
 
+.mobile-home-page .item {
+    margin-bottom: 15px;
+    border: solid 2px white;
+}
+
+.mobile-device .main-container {
+    background: none !important;
+}
+
 @media (max-width: 991px) {
     .brand-logo {
         width: 50px;
+    }
+
+    .main-container {
+        background: none !important;
     }
 }
 
