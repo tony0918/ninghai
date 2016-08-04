@@ -92,7 +92,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
     })
     .state('ninghaiTrail', {
       url: '/ninghai-trail',
-      template: '<h1>Coming soon.</h1>',
+      templateUrl: 'src/pages/ninghai-trail.html',
       onEnter: function () {
         trackPageView('/ninghai-trail');
         $('.page-content')[0].scrollTop = 0;
