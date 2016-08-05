@@ -108,7 +108,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
     })
     .state('gallery', {
       url: '/gallery',
-      template: '<h1>Coming soon.</h1>',
+      templateUrl: 'src/pages/gallery.html',
       onEnter: function () {
         trackPageView('/gallery');
         $('.page-content')[0].scrollTop = 0;
