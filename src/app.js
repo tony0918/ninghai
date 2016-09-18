@@ -34,14 +34,14 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
         $('.page-content')[0].scrollTop = 0;
       }
     })
-    .state('contactUs', {
-      url: '/contact-us',
-      templateUrl: 'src/pages/contact-us.html',
-      onEnter: function () {
-        trackPageView('/contact-us');
-        $('.page-content')[0].scrollTop = 0;
-      }
-    })
+    // .state('contactUs', {
+    //   url: '/contact-us',
+    //   templateUrl: 'src/pages/contact-us.html',
+    //   onEnter: function () {
+    //     trackPageView('/contact-us');
+    //     $('.page-content')[0].scrollTop = 0;
+    //   }
+    // })
     .state('aboutUs', {
       url: '/about-us',
       templateUrl: 'src/pages/about-us.html',
