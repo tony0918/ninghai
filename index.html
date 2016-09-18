@@ -68,6 +68,18 @@
                                                 <h5 class="menu-item-text">SCHEDULE</h5>
                                             </a>
                                         </div>
+                                        <div class="menu-dropdown-item">
+                                            <a ui-sref="transportationAndHotel">
+                                                <h4 class="menu-item-text">交通住宿</h4>
+                                                <h6 class="menu-item-text">TRANSPORTATION & HOTEL</h6>
+                                            </a>
+                                        </div>
+                                        <div class="menu-dropdown-item">
+                                            <a ui-sref="spectators">
+                                                <h4 class="menu-item-text">观众支援</h4>
+                                                <h5 class="menu-item-text">SPECTATORS</h5>
+                                            </a>
+                                        </div>
                                         <div class="menu-dropdown-item last">
                                             <a ui-sref="ultraTrailResult">
                                                 <h4 class="menu-item-text">成绩</h4>
@@ -83,10 +95,11 @@
                                     </a>
                                 </div>
                                 <div class="menu-item dropdown">
-                                    <a data-target="#" data-toggle="dropdown">
-                                        <h4 class="menu-item-text">赛事指南</h4>
-                                        <h5 class="menu-item-text">GENERAL INFO</h5>
+                                    <a ui-sref="">
+                                        <h4 class="menu-item-text">志愿者</h4>
+                                        <h5 class="menu-item-text">VOLUNTARY</h5>
                                     </a>
+                                    <!--
                                     <div class="dropdown-menu">
                                         <div class="menu-dropdown-item">
                                             <a ui-sref="transportationAndHotel">
@@ -100,13 +113,14 @@
                                                 <h5 class="menu-item-text">SPECTATORS</h5>
                                             </a>
                                         </div>
-                                        <!--<div class="menu-dropdown-item last">
+                                        <div class="menu-dropdown-item last">
                     <a ui-sref="contactUs">
                       <h4 class="menu-item-text">联系我们</h4>
                       <h5 class="menu-item-text">CONTACT US</h5>
                     </a>
-                  </div>-->
+                  </div>
                                     </div>
+                                    -->
                                 </div>
                                 <div class="menu-item menu-item-5">
                                     <a ui-sref="news">
@@ -144,7 +158,8 @@
                         </div>
                     </nav>
 
-                    <div class="visible-xs-block visible-sm-block row">
+
+                    <div class="visible-xs-block visible-sm-block">
                         <div id="gn-menu" class="gn-menu-main" style="z-index: 1;">
                             <a class="gn-trigger" style="height: 16px;width: 30px;"><span class="gn-icon gn-icon-menu"></span></a>
                             <nav class="gn-menu-wrapper">
@@ -160,6 +175,8 @@
                                                 <li><a ui-sref="ultraTrailRegulation">赛事规则 REGULATION</a></li>
                                                 <li><a ui-sref="ultraTrailRegistration">报名 REGISTRATION</a></li>
                                                 <li><a ui-sref="ultraTrailSchedule">比赛安排 SCHEDULE</a></li>
+                                                <li><a ui-sref="transportationAndHotel">交通住宿<small> TRANSPORTATION & HOTEL</small></a></li>
+                                                <li><a ui-sref="spectators">观众支援 SPECTATORS</a></li>
                                                 <li><a ui-sref="ultraTrailResult">成绩 RESULT</a></li>
                                             </ul>
                                         </li>
@@ -167,12 +184,7 @@
                                             <a ui-sref="ninghaiTrail">春季赛事 NINGHAI TRAIL</a>
                                         </li>
                                         <li>
-                                            <a>赛事指南 GENERAL INFO</a>
-                                            <ul class="gn-submenu">
-                                                <li><a ui-sref="transportationAndHotel">交通住宿<small>TRANSPORTATION & HOTEL</small></a></li>
-                                                <li><a ui-sref="spectators">观众支援 SPECTATORS</a></li>
-                                                <li><a ui-sref="contactUs">联系我们 CONTACT US</a></li>
-                                            </ul>
+                                            <a ui-sref="">志愿者 VOLUNTARY</a>
                                         </li>
                                         <li>
                                             <a ui-sref="news">新闻 NEWS</a>
@@ -181,7 +193,6 @@
                                             <a>照片 GALLERY</a>
                                             <ul class="gn-submenu">
                                                 <li><a ui-sref="gallery">秋季赛事 ULTRA-TRAIL NINGHAI</a></li>
-                                                <!--<li><a ui-sref="">春季赛事 NINGHAI TRAIL</a></li>-->
                                             </ul>
                                         </li>
                                         <li>
@@ -189,14 +200,12 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- /gn-scroller -->
                             </nav>
                         </div>
                         <div class="col-sm-12" style="padding: 7px 0 6px 0;">
                             <a class="brand-logo center-block" ui-sref="home"><img alt="Brand" class="img-responsive" src="imgs/logo.jpg"></a>
                         </div>
                     </div>
-
 
                     <div class="content container-fluid">
                         <!-- Mobile Menu -->
@@ -209,7 +218,7 @@
                 </div>
             </div>
             <footer class="main-footer">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="pull-left visible-1350">
                             <span><img src="/assets/spon1.jpg" alt=""></span>
@@ -233,9 +242,7 @@
                         <div class="text-center col-md-12 col-lg-12 hidden-1350 hidden-xs">
                             <span style="padding-right: 15px;">主办单位：上海穹景体育文化发展有限公司</span>
                             <span style="padding-right: 15px;">沪ICP备14023412号-3</span>
-                            <span style="padding-right: 15px;">
-              <small>&copy; 2016</small>
-            </span>
+                            <span style="padding-right: 15px;"><small>&copy; 2016</small></span>
                         </div>
                         <div class="visible-xs-block col-xs-12 text-center">
                             <div>
