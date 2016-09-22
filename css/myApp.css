@@ -3,6 +3,10 @@ body {
     overflow: hidden;
 }
 
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+
 a:hover {
     color: white;
 }
@@ -114,12 +118,18 @@ a:hover {
     padding-top: 15px;
 }
 
+.page-detail .text-danger {
+    color: red;
+}
+
 .page-content-uiview.ng-enter {
     transition: 1.5s linear all;
     opacity: 0;
 }
 
+
 /* The finishing CSS styles for the enter animation */
+
 .page-content-uiview.ng-enter.ng-enter-active {
     opacity: 1;
 }
@@ -141,7 +151,6 @@ a:hover {
     .brand-logo {
         width: 50px;
     }
-
     .main-container {
         background: none !important;
     }
@@ -151,11 +160,9 @@ a:hover {
     .menu-item-1, .menu-item-5, .menu-item-6 {
         width: 80px;
     }
-
     .menu-item-7 {
         width: 100px;
     }
-
     .brand-logo {
         width: 85px;
         float: left;
@@ -166,11 +173,9 @@ a:hover {
     .menu-item-1, .menu-item-5, .menu-item-6 {
         width: 100px;
     }
-
     .brand-logo {
         width: 96px;
     }
-
     .menu-item-7 {
         width: 170px;
     }
@@ -180,21 +185,16 @@ a:hover {
     .container {
         width: 1350px;
     }
-
     .menu-item-1, .menu-item-5, .menu-item-6, .menu-item-7 {
         width: 170px;
     }
-
     .visible-1350 {
         display: block;
     }
-
     .hidden-1350 {
         display: none !important;
     }
-
     .brand-logo {
         width: 96px;
     }
 }
-
