@@ -100,9 +100,25 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
         })
         .state('news', {
             url: '/news',
-            template: '<h1>Coming soon.</h1>',
+            templateUrl: 'src/pages/news.html',
             onEnter: function () {
                 trackPageView('/news');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('newsItem1', {
+            url: '/news/1',
+            templateUrl: 'src/pages/news/news1.html',
+            onEnter: function () {
+                trackPageView('/news/1');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('newsItem2', {
+            url: '/news/2',
+            templateUrl: 'src/pages/news/news2.html',
+            onEnter: function () {
+                trackPageView('/news/2');
                 $('.page-content')[0].scrollTop = 0;
             }
         })
@@ -119,6 +135,14 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
             templateUrl: 'src/pages/gallery-ninghai-trail.html',
             onEnter: function () {
                 trackPageView('/gallery-ninghai-trail');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        }).
+        state('voluntary', {
+            url: '/voluntary',
+            template: '<h1>Coming soon.</h1>',
+            onEnter: function () {
+                trackPageView('/voluntary');
                 $('.page-content')[0].scrollTop = 0;
             }
         });
