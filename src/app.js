@@ -122,6 +122,22 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
                 $('.page-content')[0].scrollTop = 0;
             }
         })
+        .state('newsItem3', {
+            url: '/news/3',
+            templateUrl: 'src/pages/news/news3.html',
+            onEnter: function () {
+                trackPageView('/news/3');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('newsItem4', {
+            url: '/news/4',
+            templateUrl: 'src/pages/news/news4.html',
+            onEnter: function () {
+                trackPageView('/news/4');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
         .state('gallery', {
             url: '/gallery',
             templateUrl: 'src/pages/gallery.html',
@@ -137,12 +153,20 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
                 trackPageView('/gallery-ninghai-trail');
                 $('.page-content')[0].scrollTop = 0;
             }
-        }).
-        state('voluntary', {
+        })
+        .state('voluntary', {
             url: '/voluntary',
             template: '<h1>Coming soon.</h1>',
             onEnter: function () {
                 trackPageView('/voluntary');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ultraTrailFaq', {
+            url: '/ultra-trail/faq',
+            templateUrl: 'src/pages/ultra-trail-faq.html',
+            onEnter: function () {
+                trackPageView('/ultra-trail/faq');
                 $('.page-content')[0].scrollTop = 0;
             }
         });
