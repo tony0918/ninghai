@@ -106,6 +106,25 @@ a:hover {
     padding: 35px;
     overflow-y: auto;
     overflow-x: hidden;
+    position: relative;
+}
+
+.trail-link {
+    position: absolute;
+    right: 10px;
+    /*top: 0;*/
+}
+
+.trail-link:hover .img {
+    display: none;
+}
+
+.trail-link .hover-img {
+    display: none;
+}
+
+.trail-link:hover .hover-img {
+    display: block;
 }
 
 .page-title {
