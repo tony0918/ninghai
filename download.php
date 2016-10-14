@@ -2,10 +2,10 @@
 if (isset($_GET['f'])) {
   switch ($_GET['f']) {
     case 'ULTRA-TRAIL_NINGHAI_map_42k':
-      $file = './assets/0-42.gpx';
+      $file = './assets/NinghaiTrail42km.kml';
       break;
     case 'ULTRA-TRAIL_NINGHAI_map_100k':
-      $file = './assets/Integral-100.gpx';
+      $file = './assets/Ultra-TrailNinghai102km.kml';
       break;
     case 'MandatoryGear100':
       $file = './assets/MandatoryGear100.pdf';

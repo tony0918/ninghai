@@ -64,14 +64,14 @@
 										</div>
 										<div class="menu-dropdown-item">
 											<a ui-sref="ultraTrailSchedule">
-												<h4 class="menu-item-text">比赛安排</h4>
+												<h4 class="menu-item-text">赛事安排</h4>
 												<h5 class="menu-item-text">SCHEDULE</h5>
 											</a>
 										</div>
 										<div class="menu-dropdown-item">
 											<a ui-sref="transportationAndHotel">
 												<h4 class="menu-item-text">交通住宿</h4>
-												<h6 class="menu-item-text">TRANSPORTATION & HOTEL</h6>
+												<h6 class="menu-item-text">TRANSPORTATION &amp; HOTEL</h6>
 											</a>
 										</div>
 										<div class="menu-dropdown-item">
@@ -95,38 +95,66 @@
 									</div>
 								</div>
 								<div class="menu-item dropdown">
-									<a ui-sref="ninghaiTrail">
+									<a data-target="#" data-toggle="dropdown">
 										<h4 class="menu-item-text">春季赛事</h4>
 										<h5 class="menu-item-text">NINGHAI TRAIL</h5>
 									</a>
+									<div class="dropdown-menu">
+										<div class="menu-dropdown-item">
+											<a ui-sref="ninghaiTrail">
+												<h4 class="menu-item-text">赛道</h4>
+												<h5 class="menu-item-text">COURSE</h5>
+											</a>
+										</div>
+										<div class="menu-dropdown-item">
+											<a ui-sref="ninghaiTrailRegulation">
+												<h4 class="menu-item-text">赛事规则</h4>
+												<h5 class="menu-item-text">REGULATION</h5>
+											</a>
+										</div>
+										<div class="menu-dropdown-item">
+											<a ui-sref="ninghaiTrailRegistration">
+												<h4 class="menu-item-text">报名</h4>
+												<h5 class="menu-item-text">REGISTRATION</h5>
+											</a>
+										</div>
+										<div class="menu-dropdown-item">
+											<a ui-sref="ninghaiTrailSchedule">
+												<h4 class="menu-item-text">赛事安排</h4>
+												<h5 class="menu-item-text">SCHEDULE</h5>
+											</a>
+										</div>
+										<div class="menu-dropdown-item">
+											<a ui-sref="ninghaiTrailTransportationAndHotel">
+												<h4 class="menu-item-text">交通住宿</h4>
+												<h6 class="menu-item-text">TRANSPORTATION &amp; HOTEL</h6>
+											</a>
+										</div>
+										<div class="menu-dropdown-item">
+											<a ui-sref="ninghaiTrailSpectators">
+												<h4 class="menu-item-text">观众支援</h4>
+												<h5 class="menu-item-text">SPECTATORS</h5>
+											</a>
+										</div>
+										<div class="menu-dropdown-item last">
+											<a ui-sref="ninghaiTrailResult">
+												<h4 class="menu-item-text">成绩</h4>
+												<h5 class="menu-item-text">RESULT</h5>
+											</a>
+										</div>
+										<!--<div class="menu-dropdown-item last">
+											<a ui-sref="ninghaiTrailFaq">
+												<h4 class="menu-item-text">常见问题</h4>
+												<h5 class="menu-item-text">FAQs</h5>
+											</a>
+										</div>-->
+									</div>
 								</div>
 								<div class="menu-item dropdown">
 									<a ui-sref="voluntary">
 										<h4 class="menu-item-text">志愿者</h4>
 										<h5 class="menu-item-text">VOLUNTARY</h5>
 									</a>
-									<!--
-                                    <div class="dropdown-menu">
-                                        <div class="menu-dropdown-item">
-                                            <a ui-sref="transportationAndHotel">
-                                                <h4 class="menu-item-text">交通住宿</h4>
-                                                <h6 class="menu-item-text">TRANSPORTATION & HOTEL</h6>
-                                            </a>
-                                        </div>
-                                        <div class="menu-dropdown-item last">
-                                            <a ui-sref="spectators">
-                                                <h4 class="menu-item-text">观众支援</h4>
-                                                <h5 class="menu-item-text">SPECTATORS</h5>
-                                            </a>
-                                        </div>
-                                        <div class="menu-dropdown-item last">
-                    <a ui-sref="contactUs">
-                      <h4 class="menu-item-text">联系我们</h4>
-                      <h5 class="menu-item-text">CONTACT US</h5>
-                    </a>
-                  </div>
-                                    </div>
-                                    -->
 								</div>
 								<div class="menu-item menu-item-5">
 									<a ui-sref="news">
@@ -188,7 +216,17 @@
 											</ul>
 										</li>
 										<li>
-											<a ui-sref="ninghaiTrail">春季赛事 NINGHAI TRAIL</a>
+											<a>春季赛事 NINGHAI TRAIL</a>
+											<ul class="gn-submenu">
+												<li><a ui-sref="ninghaiTrail">赛道 COURSE</a></li>
+												<li><a ui-sref="ninghaiTrailRegulation">赛事规则 REGULATION</a></li>
+												<li><a ui-sref="ninghaiTrailRegistration">报名 REGISTRATION</a></li>
+												<li><a ui-sref="ninghaiTrailSchedule">赛事安排 SCHEDULE</a></li>
+												<li><a ui-sref="ninghaiTrailTransportationAndHotel">交通住宿<small> TRANSPORTATION &amp; HOTEL</small></a></li>
+												<li><a ui-sref="ninghaiTrailSpectators">观众支援 SPECTATORS</a></li>
+												<li><a ui-sref="ninghaiTrailResult">成绩 RESULT</a></li>
+												<!--<li><a ui-sref="ninghaiTrailFaq">常见问题 FAQs</a></li>-->
+											</ul>
 										</li>
 										<li>
 											<a ui-sref="voluntary">志愿者 VOLUNTARY</a>
@@ -212,6 +250,7 @@
 						</div>
 						<div class="col-sm-12" style="padding: 7px 0 6px 0;">
 							<a class="brand-logo center-block" ui-sref="home"><img alt="Brand" class="img-responsive" src="imgs/logo.jpg"></a>
+							<a class="mobile-livetrail" target="_blank" href="http://ultraninghai.livetrail.net/"><img class="img-responsive" src="imgs/trail-link.png" alt=""></a>
 						</div>
 					</div>
 

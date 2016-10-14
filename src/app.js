@@ -90,14 +90,6 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
                 $('.page-content')[0].scrollTop = 0;
             }
         })
-        .state('ninghaiTrail', {
-            url: '/ninghai-trail',
-            templateUrl: 'src/pages/ninghai-trail.html',
-            onEnter: function () {
-                trackPageView('/ninghai-trail');
-                $('.page-content')[0].scrollTop = 0;
-            }
-        })
         .state('news', {
             url: '/news',
             templateUrl: 'src/pages/news.html',
@@ -167,6 +159,62 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
             templateUrl: 'src/pages/ultra-trail-faq.html',
             onEnter: function () {
                 trackPageView('/ultra-trail/faq');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ninghaiTrail', {
+            url: '/ninghai-trail',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-course.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ninghaiTrailResult', {
+            url: '/ninghai-trail/result',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-result.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail/result');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ninghaiTrailSpectators', {
+            url: '/ninghai-trail/spectators',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-spectators.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail/spectators');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ninghaiTrailRegistration', {
+            url: '/ninghai-trail/registration',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-registration.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail/registration');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ninghaiTrailSchedule', {
+            url: '/ninghai-trail/schedule',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-schedule.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail/schedule');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ninghaiTrailRegulation', {
+            url: '/ninghai-trail/regulation',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-regulation.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail/regulation');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
+        .state('ninghaiTrailTransportationAndHotel', {
+            url: '/ninghai-trail/transportation-and-hotel',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-transportation-and-hotel.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail/transportation-and-hotel');
                 $('.page-content')[0].scrollTop = 0;
             }
         });

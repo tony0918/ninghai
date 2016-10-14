@@ -127,6 +127,16 @@ a:hover {
     display: block;
 }
 
+.mobile-livetrail {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+.mobile-livetrail img {
+    max-height: 46px;
+}
+
 .page-title {
     color: #3bb3ff;
     padding-bottom: 15px;
