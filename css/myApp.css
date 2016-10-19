@@ -86,7 +86,8 @@ a:hover {
 }
 
 .main-footer {
-    min-height: 84px;
+    /*min-height: 84px;*/
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     background: white;
