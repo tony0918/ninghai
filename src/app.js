@@ -130,6 +130,14 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
                 $('.page-content')[0].scrollTop = 0;
             }
         })
+        .state('newsItem5', {
+            url: '/news/5',
+            templateUrl: 'src/pages/news/news5.html',
+            onEnter: function () {
+                trackPageView('/news/5');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
         .state('gallery', {
             url: '/gallery',
             templateUrl: 'src/pages/gallery.html',
@@ -148,7 +156,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
         })
         .state('voluntary', {
             url: '/voluntary',
-            template: '<h1>Coming soon.</h1>',
+            templateUrl: 'src/pages/voluntary.html',
             onEnter: function () {
                 trackPageView('/voluntary');
                 $('.page-content')[0].scrollTop = 0;
