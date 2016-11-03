@@ -13,6 +13,9 @@ if (isset($_GET['f'])) {
     case 'MandatoryGear42':
       $file = './assets/MandatoryGear42.pdf';
       break;
+    case 'ninghai_classic_50k':
+      $file = './assets/NinghaiClassic.gpx';
+      break;
     default:
       exit;
   }
