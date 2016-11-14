@@ -3,7 +3,12 @@ body {
     overflow: hidden;
 }
 
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
     vertical-align: middle;
 }
 
@@ -51,7 +56,10 @@ a:hover {
     margin-left: 0;
 }
 
-.menu-item a:hover, .menu-item a:active, .menu-item a:visited, .menu-item a:link {
+.menu-item a:hover,
+.menu-item a:active,
+.menu-item a:visited,
+.menu-item a:link {
     text-decoration: none;
     color: white;
 }
@@ -187,7 +195,9 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-    .menu-item-1, .menu-item-5, .menu-item-6 {
+    .menu-item-1,
+    .menu-item-5,
+    .menu-item-6 {
         width: 80px;
     }
     .menu-item-7 {
@@ -200,7 +210,9 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
-    .menu-item-1, .menu-item-5, .menu-item-6 {
+    .menu-item-1,
+    .menu-item-5,
+    .menu-item-6 {
         width: 100px;
     }
     .brand-logo {
@@ -215,7 +227,10 @@ a:hover {
     .container {
         width: 1350px;
     }
-    .menu-item-1, .menu-item-5, .menu-item-6, .menu-item-7 {
+    .menu-item-1,
+    .menu-item-5,
+    .menu-item-6,
+    .menu-item-7 {
         width: 170px;
     }
     .visible-1350 {
@@ -227,4 +242,8 @@ a:hover {
     .brand-logo {
         width: 96px;
     }
+}
+
+#carousel-example-generic .carousel-inner .item img {
+    margin: auto;
 }
