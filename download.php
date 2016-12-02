@@ -8,10 +8,10 @@ if (isset($_GET['f'])) {
       $file = './assets/Ultra-TrailNinghai102km.kml';
       break;
     case 'MandatoryGear100':
-      $file = './assets/MandatoryGear100.pdf';
+      $file = './assets/GearList50.pdf';
       break;
     case 'MandatoryGear42':
-      $file = './assets/MandatoryGear42.pdf';
+      $file = './assets/GearList11.pdf';
       break;
     case 'ninghai_classic_50k':
       $file = './assets/NinghaiClassic.gpx';
