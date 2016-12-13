@@ -94,7 +94,7 @@ a:hover {
 }
 
 .main-footer {
-    /*min-height: 84px;*/
+    max-height: 50px;
     padding: 15px 0;
     position: fixed;
     bottom: 0;
@@ -112,7 +112,7 @@ a:hover {
 }
 
 .page-content {
-    padding: 35px;
+    /*padding: 35px;*/
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
@@ -160,6 +160,10 @@ a:hover {
     color: red;
 }
 
+.page-content-uiview {
+    padding: 35px;
+}
+
 .page-content-uiview.ng-enter {
     transition: 1.5s linear all;
     opacity: 0;
@@ -191,6 +195,9 @@ a:hover {
     }
     .main-container {
         background: none !important;
+    }
+    .main-footer {
+        position: relative;
     }
 }
 
