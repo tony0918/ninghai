@@ -225,5 +225,13 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
                 trackPageView('/ninghai-trail/transportation-and-hotel');
                 $('.page-content')[0].scrollTop = 0;
             }
+        })
+        .state('lijiangSkyviewCourse', {
+            url: '/lijiang/course',
+            templateUrl: 'src/pages/lijiang/lijiang-skyview-course.html',
+            onEnter: function() {
+                trackPageView('/lijiang/course');
+                $('.page-content')[0].scrollTop = 0;
+            }
         });
 }]);

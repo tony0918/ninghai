@@ -29,7 +29,7 @@
                     <nav class="main-menu container-fluid visible-md-block visible-lg-block">
                         <div class="row clearfix">
                             <a class="brand-logo" ui-sref="home">
-                                <img alt="Brand" class="img-responsive" src="imgs/logo.jpg">
+                                <img alt="Brand" class="img-responsive" src="imgs/logo.png">
                             </a>
                             <div class="main-menu-items clearfix">
                                 <div class="menu-item menu-item-1">
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="menu-item dropdown">
                                     <a data-target="#" data-toggle="dropdown">
-                                        <h4 class="menu-item-text">秋季赛事</h4>
+                                        <h4 class="menu-item-text">宁海秋季</h4>
                                         <h5 class="menu-item-text">ULTRA-TRAIL NINGHAI</h5>
                                     </a>
                                     <div class="dropdown-menu">
@@ -86,6 +86,12 @@
                                                 <h5 class="menu-item-text">RESULT</h5>
                                             </a>
                                         </div>
+                                        <div class="menu-dropdown-item">
+                                            <a ui-sref="voluntary">
+                                                <h4 class="menu-item-text">志愿者</h4>
+                                                <h5 class="menu-item-text">VOLUNTARY</h5>
+                                            </a>
+                                        </div>
                                         <div class="menu-dropdown-item last">
                                             <a ui-sref="ultraTrailFaq">
                                                 <h4 class="menu-item-text">常见问题</h4>
@@ -96,7 +102,7 @@
                                 </div>
                                 <div class="menu-item dropdown">
                                     <a data-target="#" data-toggle="dropdown">
-                                        <h4 class="menu-item-text">春季赛事</h4>
+                                        <h4 class="menu-item-text">宁海春季</h4>
                                         <h5 class="menu-item-text">NINGHAI CLASSIC</h5>
                                     </a>
                                     <div class="dropdown-menu">
@@ -170,13 +176,13 @@
                                     <div class="dropdown-menu">
                                         <div class="menu-dropdown-item">
                                             <a ui-sref="gallery">
-                                                <h4 class="menu-item-text">秋季赛事</h4>
+                                                <h4 class="menu-item-text">宁海秋季</h4>
                                                 <h5 class="menu-item-text">ULTRA-TRAIL NINGHAI</h5>
                                             </a>
                                         </div>
                                         <div class="menu-dropdown-item last">
                                             <a ui-sref="galleryNinghaiTrail">
-                                                <h4 class="menu-item-text">春季赛事</h4>
+                                                <h4 class="menu-item-text">宁海春季</h4>
                                                 <h5 class="menu-item-text">NINGHAI TRAIL</h5>
                                             </a>
                                         </div>
@@ -203,7 +209,7 @@
                                             <a ui-sref="home">首页 HOME</a>
                                         </li>
                                         <li>
-                                            <a>秋季赛事 ULTRA-TRAIL NINGHAI</a>
+                                            <a>宁海秋季 ULTRA-TRAIL NINGHAI</a>
                                             <ul class="gn-submenu">
                                                 <li><a ui-sref="ultraTrailCourse">赛道 COURSE</a></li>
                                                 <li><a ui-sref="ultraTrailRegulation">赛事规则 REGULATION</a></li>
@@ -212,11 +218,12 @@
                                                 <li><a ui-sref="transportationAndHotel">交通住宿<small> TRANSPORTATION &amp; HOTEL</small></a></li>
                                                 <li><a ui-sref="spectators">观众支援 SPECTATORS</a></li>
                                                 <li><a ui-sref="ultraTrailResult">成绩 RESULT</a></li>
+                                                <li><a ui-sref="voluntary">志愿者 VOLUNTARY</a></li>
                                                 <li><a ui-sref="ultraTrailFaq">常见问题 FAQs</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a>春季赛事 NINGHAI CLASSIC</a>
+                                            <a>宁海春季 NINGHAI CLASSIC</a>
                                             <ul class="gn-submenu">
                                                 <li><a ui-sref="ninghaiTrail">赛道 COURSE</a></li>
                                                 <li><a ui-sref="ninghaiTrailRegulation">赛事规则 REGULATION</a></li>
@@ -229,7 +236,17 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a ui-sref="voluntary">志愿者 VOLUNTARY</a>
+                                            <a>玉龙雪山 LIJIANG SKYVIEW ADVENTURE</a>
+                                            <ul class="gn-submenu">
+                                                <li><a ui-sref="ninghaiTrail">赛道 COURSE</a></li>
+                                                <!--<li><a ui-sref="ninghaiTrailRegulation">赛事规则 REGULATION</a></li>-->
+                                                <!--<li><a ui-sref="ninghaiTrailRegistration">报名 REGISTRATION</a></li>-->
+                                                <!--<li><a ui-sref="ninghaiTrailSchedule">赛事安排 SCHEDULE</a></li>-->
+                                                <!--<li><a ui-sref="ninghaiTrailTransportationAndHotel">交通住宿<small> TRANSPORTATION &amp; HOTEL</small></a></li>-->
+                                                <!--<li><a ui-sref="ninghaiTrailSpectators">观众支援 SPECTATORS</a></li>-->
+                                                <!--<li><a ui-sref="ninghaiTrailResult">成绩 RESULT</a></li>-->
+                                                <!--<li><a ui-sref="ninghaiTrailFaq">常见问题 FAQs</a></li>-->
+                                            </ul>
                                         </li>
                                         <li>
                                             <a ui-sref="news">新闻 NEWS</a>
@@ -237,8 +254,8 @@
                                         <li>
                                             <a>照片 GALLERY</a>
                                             <ul class="gn-submenu">
-                                                <li><a ui-sref="gallery">秋季赛事 ULTRA-TRAIL NINGHAI</a></li>
-                                                <li><a ui-sref="galleryNinghaiTrail">春季赛事 NINGHAI TRAIL</a></li>
+                                                <li><a ui-sref="gallery">宁海秋季 ULTRA-TRAIL NINGHAI</a></li>
+                                                <li><a ui-sref="galleryNinghaiTrail">宁海春季 NINGHAI TRAIL</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -249,7 +266,7 @@
                             </nav>
                         </div>
                         <div class="col-sm-12" style="padding: 7px 0 6px 0;">
-                            <a class="brand-logo center-block" ui-sref="home"><img alt="Brand" class="img-responsive" src="imgs/logo.jpg"></a>
+                            <a class="brand-logo center-block" ui-sref="home"><img alt="Brand" class="img-responsive" src="imgs/logo.png"></a>
                             <!--<a class="mobile-livetrail" target="_blank" href="http://ultraninghai.livetrail.net/"><img class="img-responsive" src="imgs/trail-link.png" alt=""></a>-->
                         </div>
                     </div>
