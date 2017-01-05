@@ -157,10 +157,59 @@
                                     </div>
                                 </div>
                                 <div class="menu-item dropdown">
-                                    <a ui-sref="voluntary">
-                                        <h4 class="menu-item-text">志愿者</h4>
-                                        <h5 class="menu-item-text">VOLUNTARY</h5>
+                                    <a data-target="#" data-toggle="dropdown">
+                                        <h4 class="menu-item-text">玉龙雪山</h4>
+                                        <h5 class="menu-item-text"><small>LIJIANG SKYVIEW ADVENTURE</small></h5>
                                     </a>
+                                    <div class="dropdown-menu">
+                                        <div class="menu-dropdown-item">
+                                            <a ui-sref="lijiangSkyviewCourse">
+                                                <h4 class="menu-item-text">有关赛事</h4>
+                                                <h5 class="menu-item-text">GERERAL INFO</h5>
+                                            </a>
+                                        </div>
+                                        <div class="menu-dropdown-item single-line-menu-item">
+                                            <a ui-sref="lijiangSkyviewUltra50k">
+                                                <h4 class="menu-item-text">ULTRA 50K</h4>
+                                            </a>
+                                        </div>
+                                        <div class="menu-dropdown-item single-line-menu-item">
+                                            <a ui-sref="lijiangSkyviewSkyrace21k">
+                                                <h4 class="menu-item-text">SKYRACE 21K</h4>
+                                            </a>
+                                        </div>
+                                        <!--<div class="menu-dropdown-item">
+                                            <a ui-sref="lijiangSkyviewAccomodation">
+                                                <h4 class="menu-item-text">交通住宿</h4>
+                                                <h5 class="menu-item-text">ACCOMODATION</h5>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="menu-dropdown-item">
+                                            <a ui-sref="ultraTrailResult">
+                                                <h4 class="menu-item-text">成绩</h4>
+                                                <h5 class="menu-item-text">RESULT</h5>
+                                            </a>
+                                        </div>-->
+                                        <div class="menu-dropdown-item last">
+                                            <a ui-sref="lijiangSkyviewSponsor">
+                                                <h4 class="menu-item-text">合作伙伴</h4>
+                                                <h5 class="menu-item-text">PARTNERS</h5>
+                                            </a>
+                                        </div>
+                                        <!-- <div class="menu-dropdown-item">
+                                            <a ui-sref="voluntary">
+                                                <h4 class="menu-item-text">志愿者</h4>
+                                                <h5 class="menu-item-text">VOLUNTEER</h5>
+                                            </a>
+                                        </div>
+                                        <div class="menu-dropdown-item last">
+                                            <a ui-sref="ultraTrailFaq">
+                                                <h4 class="menu-item-text">常见问题</h4>
+                                                <h5 class="menu-item-text">F&amp;A</h5>
+                                            </a>
+                                        </div>-->
+                                    </div>
                                 </div>
                                 <div class="menu-item menu-item-5">
                                     <a ui-sref="news">
@@ -180,10 +229,16 @@
                                                 <h5 class="menu-item-text">ULTRA-TRAIL NINGHAI</h5>
                                             </a>
                                         </div>
-                                        <div class="menu-dropdown-item last">
+                                        <div class="menu-dropdown-item">
                                             <a ui-sref="galleryNinghaiTrail">
                                                 <h4 class="menu-item-text">宁海春季</h4>
-                                                <h5 class="menu-item-text">NINGHAI TRAIL</h5>
+                                                <h5 class="menu-item-text">NINGHAI CLASSIC</h5>
+                                            </a>
+                                        </div>
+                                        <div class="menu-dropdown-item last">
+                                            <a ui-sref="galleryLijiang">
+                                                <h4 class="menu-item-text">玉龙雪山</h4>
+                                                <h5 class="menu-item-text"><small>LIJIANG SKYVIEW ADVENTURE</small></h5>
                                             </a>
                                         </div>
                                     </div>
@@ -238,14 +293,14 @@
                                         <li>
                                             <a>玉龙雪山 LIJIANG SKYVIEW ADVENTURE</a>
                                             <ul class="gn-submenu">
-                                                <li><a ui-sref="ninghaiTrail">赛道 COURSE</a></li>
-                                                <!--<li><a ui-sref="ninghaiTrailRegulation">赛事规则 REGULATION</a></li>-->
-                                                <!--<li><a ui-sref="ninghaiTrailRegistration">报名 REGISTRATION</a></li>-->
-                                                <!--<li><a ui-sref="ninghaiTrailSchedule">赛事安排 SCHEDULE</a></li>-->
-                                                <!--<li><a ui-sref="ninghaiTrailTransportationAndHotel">交通住宿<small> TRANSPORTATION &amp; HOTEL</small></a></li>-->
-                                                <!--<li><a ui-sref="ninghaiTrailSpectators">观众支援 SPECTATORS</a></li>-->
-                                                <!--<li><a ui-sref="ninghaiTrailResult">成绩 RESULT</a></li>-->
-                                                <!--<li><a ui-sref="ninghaiTrailFaq">常见问题 FAQs</a></li>-->
+                                                <li><a ui-sref="lijiangSkyviewCourse">有关赛事 GERERAL INFO</a></li>
+                                                <li><a ui-sref="lijiangSkyviewUltra50k">ULTRA 50K</a></li>
+                                                <li><a ui-sref="lijiangSkyviewSkyrace21k">SKYRACE 21K</a></li>
+                                                <!--<li><a ui-sref="lijiangSkyviewAccomodation">交通住宿 ACCOMODATION</a></li>
+                                                <li><a ui-sref="ninghaiTrailResult">成绩 RESULT</a></li>-->
+                                                <li><a ui-sref="lijiangSkyviewSponsor">合作伙伴 PARTNERS</a></li>
+                                                <!--<li><a ui-sref="ninghaiTrailSpectators">志愿者 VOLUNTEER</a></li>
+                                                <li><a ui-sref="ninghaiTrailFaq">常见问题 F&amp;A</a></li>-->
                                             </ul>
                                         </li>
                                         <li>
@@ -256,6 +311,7 @@
                                             <ul class="gn-submenu">
                                                 <li><a ui-sref="gallery">宁海秋季 ULTRA-TRAIL NINGHAI</a></li>
                                                 <li><a ui-sref="galleryNinghaiTrail">宁海春季 NINGHAI TRAIL</a></li>
+                                                <li><a ui-sref="galleryLijiang">玉龙雪山 LIJIANG SKYVIEW ADVENTURE</a></li>
                                             </ul>
                                         </li>
                                         <li>

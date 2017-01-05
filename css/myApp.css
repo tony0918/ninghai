@@ -52,6 +52,11 @@ a:hover {
     color: white;
 }
 
+.menu-item .single-line-menu-item h4 {
+    height: 38px;
+    line-height: 38px;
+}
+
 .menu-item-1 {
     margin-left: 0;
 }
@@ -67,6 +72,10 @@ a:hover {
 .menu-item .menu-item-text {
     margin: 0 auto 5px auto;
     padding: 0;
+}
+
+.menu-item .menu-item-text small {
+    color: white;
 }
 
 .dropdown-menu {
