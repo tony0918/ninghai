@@ -226,6 +226,14 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
                 $('.page-content')[0].scrollTop = 0;
             }
         })
+        .state('ninghaiTrailVoluntary', {
+            url: '/ninghai-trail/voluntary',
+            templateUrl: 'src/pages/ninghaitrail/ninghai-trail-voluntary.html',
+            onEnter: function () {
+                trackPageView('/ninghai-trail/voluntary');
+                $('.page-content')[0].scrollTop = 0;
+            }
+        })
         .state('lijiangSkyviewCourse', {
             url: '/lijiang/course',
             templateUrl: 'src/pages/lijiang/lijiang-skyview-course.html',
