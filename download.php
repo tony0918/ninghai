@@ -20,10 +20,10 @@ if (isset($_GET['f'])) {
       $file = './assets/GearList11.5-cn.pdf';
       break;
     case 'MandatoryGear42':
-      $file = './assets/ULTRA-TRAIL-NINGHAI_42km-Gear-List_cn.pdf';
+      $file = './assets/ULTRA-TRAIL-NINGHAI_50km-Gear-List.pdf';
       break;
     case 'MandatoryGear42en':
-      $file = './assets/ULTRA-TRAIL-NINGHAI_42km-Gear-List_en.pdf';
+      $file = './assets/ULTRA-TRAIL-NINGHAI_50km-Gear-List-en.pdf';
       break;
     case 'ninghai_classic_50k':
       $file = './assets/NinghaiClassic.gpx';
