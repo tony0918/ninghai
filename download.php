@@ -28,6 +28,12 @@ if (isset($_GET['f'])) {
     case 'ninghai_classic_50k':
       $file = './assets/NinghaiClassic.gpx';
       break;
+    case 'LijiangSkyrace21k':
+      $file = './assets/LijiangSkyrace21k.gpx';
+      break;
+    case 'LijiangUltra50k':
+      $file = './assets/LijiangUltra50k.gpx';
+      break;
     default:
       exit;
   }
@@ -39,6 +45,8 @@ if (isset($_GET['f'])) {
     header('Cache-Control: must-revalidate');
     header('Pragma: public');
     header('Content-Length: ' . filesize($file));
+    ob_clean();
+    flush();
     readfile($file);
   }
 }
