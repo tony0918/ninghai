@@ -1,29 +1,29 @@
 <?php
 if (isset($_GET['f'])) {
   switch ($_GET['f']) {
-    case 'ULTRA-TRAIL_NINGHAI_map_42k':
-      $file = './assets/NinghaiTrail42km.kml';
-      break;
     case 'ULTRA-TRAIL_NINGHAI_map_100k':
-      $file = './assets/Ultra-TrailNinghai102km.kml';
+      $file = './assets/UTNH-100K.GPX';
+      break;
+    case 'ULTRA-TRAIL_NINGHAI_map_50k':
+      $file = './assets/UTNH-50K.gpx';
       break;
     case 'MandatoryGear50':
       $file = './assets/GearList50-cn.pdf';
       break;
     case 'MandatoryGear100':
-      $file = './assets/ULTRA-TRAIL-NINGHAI_100km-Gear-List_cn.pdf';
+      $file = './assets/2017UTNH-100km-Gear-List-cn.pdf';
       break;
     case 'MandatoryGear100en':
-      $file = './assets/ULTRA-TRAIL-NINGHAI_100km-Gear-List_en.pdf';
+      $file = './assets/2017UTNH-100km-Gear-List-cn.pdf';
       break;
     case 'MandatoryGear11':
       $file = './assets/GearList11.5-cn.pdf';
       break;
-    case 'MandatoryGear42':
-      $file = './assets/ULTRA-TRAIL-NINGHAI_50km-Gear-List.pdf';
+    case 'MandatoryGear50':
+      $file = './assets/2017UTNH-50km-Gear-List-cn.pdf';
       break;
-    case 'MandatoryGear42en':
-      $file = './assets/ULTRA-TRAIL-NINGHAI_50km-Gear-List-en.pdf';
+    case 'MandatoryGear50en':
+      $file = './assets/2017UTNH-50km-Gear-List-en.pdf';
       break;
     case 'ninghai_classic_50k':
       $file = './assets/NinghaiClassic.gpx';
