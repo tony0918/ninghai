@@ -14,7 +14,7 @@ if (isset($_GET['f'])) {
       $file = './assets/2017UTNH-100km-Gear-List-cn.pdf';
       break;
     case 'MandatoryGear100en':
-      $file = './assets/2017UTNH-100km-Gear-List-cn.pdf';
+      $file = './assets/2017UTNH-100km-Gear-List-en.pdf';
       break;
     case 'MandatoryGear11':
       $file = './assets/GearList11.5-cn.pdf';
