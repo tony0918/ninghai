@@ -7,9 +7,6 @@ if (isset($_GET['f'])) {
     case 'ULTRA-TRAIL_NINGHAI_map_50k':
       $file = './assets/UTNH-50K.gpx';
       break;
-    case 'MandatoryGear50':
-      $file = './assets/GearList50-cn.pdf';
-      break;
     case 'MandatoryGear100':
       $file = './assets/2017UTNH-100km-Gear-List-cn.pdf';
       break;
